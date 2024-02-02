@@ -32,6 +32,11 @@ a {
 
 img{
     max-width: 100%;
+    max-height: auto
+    ;
+    
+   
+    
 }
 
 
@@ -42,18 +47,56 @@ img{
     margin: 0 auto;
 }
 
+.container-sm {
+    max-width: 700px;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    
+}
+
+.nav-bottom{
+    padding: 50px, 0;
+}
+
 .row {
     display: flex;
+    padding: 10px;
+    justify-content: center;
+    
+}
+
+.container-link {
+    display: flex;
+    align-items: center;
 }
 
 .nav-link{
     display: flex;
-	align-items: center;
-	gap: 16px;
+	gap: 20px;
+    align-items: center;
 }
 
 .nav .row{
     justify-content: space-between;
+    gap: 12px;
+    align-items: center;
+    
+   
+}
+.container-sm .row{
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    
+}
+.nav-button {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.container-sm {
+    gap: 100px;
 }
 
 /* utilities */
@@ -68,4 +111,25 @@ img{
     color: white;
 }
 
+.nav-header {
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+}
+
+.text-white {
+    color: white;
+}
+
 /* debug */
+
+.debug .container, .debug .container-sm{
+    border: 2px solid black;
+}
+
+.debug .row {
+    border: 2px solid red;
+}
+
+.debug [class^='col'] {
+    border: 2px solid green;
+}
