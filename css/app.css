@@ -1,0 +1,71 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body *{
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Single Day', cursive;
+}
+
+ol,
+ul,
+menu {
+    list-style-type: none;
+}
+img {
+    max-width: 100%;
+}
+button{
+    background: transparent;
+    border-radius: 20px;
+    padding: 5px;
+    border-color: transparent;
+}
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+img{
+    max-width: 100%;
+}
+
+
+/* LAYOUT */
+
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+}
+
+.nav-link{
+    display: flex;
+	align-items: center;
+	gap: 16px;
+}
+
+.nav .row{
+    justify-content: space-between;
+}
+
+/* utilities */
+
+.bg-white {
+    background-color: white;
+    color: black;
+}
+
+.bg-black {
+    background-color: black;
+    color: white;
+}
+
+/* debug */
