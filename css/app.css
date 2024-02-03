@@ -94,6 +94,14 @@ img{
     gap: 30px;
     
 }
+
+/* .nav-top{
+    position: fixed center;
+    top: 0;
+    background-color: #255EE9;
+    
+
+} */
 .nav-button {
     display: flex;
     justify-content: center;
@@ -108,7 +116,7 @@ padding-top: 80px;
 padding-bottom: 50px;
 }
 .card [class^='col']{
-    min-height: 400px;
+    min-height: 10px;
 
 }
 
@@ -177,6 +185,15 @@ padding-bottom: 50px;
     color: white;
 }
 
+.bg-blue{
+    background-color: #8EA1E1;
+    color: white;
+}
+
+.bg-darkgray{
+    background-color: #23272A;
+}
+
 .nav-header {
     background-image: url(../img/jumbo.png);
     background-size: cover;
@@ -184,6 +201,10 @@ padding-bottom: 50px;
 
 .text-white {
     color: white;
+}
+
+.text-blue{
+    color: #8EA1E1;
 }
 
 .bg-gray{
@@ -200,42 +221,55 @@ padding-bottom: 50px;
     align-items: center;
 }
 
-
-.study-group .col-img {
-    background-image: url(../img/item1.svg);
-    background-size: cover;
+.main.footer{
+    display: flex;
 }
 
-.just-chillin .col-img {
-    background-image: url(../img/item2.svg);
-    background-size: cover;
+.starred{
+    min-height: 50px;
+    background-image: url(../img/stars.svg);
+    padding: 20px;
 }
 
-.coach .col-img {
-    background-image: url(../img/item3.svg);
-    background-size: cover;
+.foot-top [class^='col']{
+    display: flex;
+}
+.language {
+    max-height: 15px;
 }
 
-.tecnologia .col-img{
-    background-image: url(../img/item4-big.svg);
-    background-size: cover;
-    min-height: 500px;
+.icon-footer {
+    width:20px;
+    display: inline-block;
 }
-.tecnologia .row{
-    flex-direction: column;
+
+.menu-footer{
+    display: flex;
+}
+
+.language{
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.foot-top .row{
+    border-bottom: 2px solid #8EA1E1;
+}
+
+.nation-button{
+    display: inline-block;
     
 }
-.row .col-title {
-    min-height: 10px;
+#nation {
+    background-color: transparent;
+    color: white;
+    border: 0;
+    padding: 0;
 }
-.row .col-img {
-    
+
+#nation option{
+    background-color: #23272A;
 }
-
-
-
-
-
 
 
 
