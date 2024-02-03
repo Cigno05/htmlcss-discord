@@ -39,6 +39,10 @@ img{
 
 /* LAYOUT */
 
+
+    
+        
+
 .container{
     max-width: 900px;
     margin: 0 auto;
@@ -60,8 +64,9 @@ img{
     display: flex;
     padding: 10px;
     justify-content: center;
-    
+   
 }
+
 
 [class^='col']{
     display: flex;
@@ -95,13 +100,7 @@ img{
     
 }
 
-/* .nav-top{
-    position: fixed center;
-    top: 0;
-    background-color: #255EE9;
-    
 
-} */
 .nav-button {
     display: flex;
     justify-content: center;
@@ -175,6 +174,11 @@ padding-bottom: 50px;
 
 /* utilities */
 
+h1 {
+    font-size: 40px;
+}
+
+
 .bg-white {
     background-color: white;
     color: black;
@@ -229,14 +233,13 @@ padding-bottom: 50px;
     min-height: 50px;
     background-image: url(../img/stars.svg);
     padding: 20px;
+    font-size: 25px;
 }
 
 .foot-top [class^='col']{
     display: flex;
 }
-.language {
-    max-height: 15px;
-}
+
 
 .icon-footer {
     width:20px;
@@ -250,6 +253,7 @@ padding-bottom: 50px;
 .language{
     margin-bottom: 10px;
     display: inline-block;
+    max-height: 15px;
 }
 
 .foot-top .row{
@@ -269,6 +273,7 @@ padding-bottom: 50px;
 
 #nation option{
     background-color: #23272A;
+    
 }
 
 
@@ -280,7 +285,13 @@ padding-bottom: 50px;
 
 
 
+
+
 /* debug */
+
+.debug .card {
+    border: 2px solid purple;
+}
 
 .debug .container, .debug .container-sm{
     border: 2px solid black;
