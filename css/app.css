@@ -39,9 +39,20 @@ img{
 
 /* LAYOUT */
 
+.wave{
+    margin: -6px;
+    min-height: 150px;
+    filter: invert(100%) sepia(4%) saturate(604%) hue-rotate(326deg) brightness(111%) contrast(80%);
+    width: 100%;
+}
+
+.wave.rotate{
+    transform: rotate(180deg);
+}    
+    
 
     
-        
+
 
 .container{
     max-width: 900px;
@@ -113,6 +124,10 @@ img{
 .card{
 padding-top: 80px;
 padding-bottom: 50px;
+}
+
+.card.bg-gray{
+    padding-top: 0;
 }
 .card [class^='col']{
     min-height: 10px;
