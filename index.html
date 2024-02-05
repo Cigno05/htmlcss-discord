@@ -6,7 +6,9 @@
     <title>Discord</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Single+Day&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="./css/app.css">
 </head>
@@ -17,7 +19,7 @@
             <nav class="nav-top">
                 <div class="container nav">
                     <div class="row">
-                        <div><img src="./img/logo.svg" alt="logo discord"></div>
+                        <div class="logo-discord"><img src="./img/logo.svg" alt="logo discord"></div>
                         <div class="container-link">
                             <ul class="nav-link">
                                 <li>Scarica</li>
@@ -33,22 +35,25 @@
                     </div>
                 </div>
             </nav>
-            <section class="nav-bottom">
-                <div class="container-sm">
-                    <div class="row">
-                        <h1>Il tuo posto per parlare</h1>
-                        <p>Che tu faccia parte di un club scolastico, gruppo di gamer, comunità artistica mondiale, o semplicemente di un piccolo gruppo di amici che vuole passare il tempo assieme, Discord rende più facile chiacchierare ogni giorno e ritrovarsi più spesso</p>
-                    </div>
-                    <div class="nav-button">
-                        <button class="bg-white">&dArr; Scarica per Mac</button>
-                        <button class="bg-black">Apri Discord nel tuo browser</button>
-                    </div>
-                </div>
-            </section>
-        </div>
+        </div>    
+        
     </header>
     
     <main>
+
+        <section class="main-hero">
+            <div class="container-sm">
+                <div class="row">
+                    <h1>Il tuo posto per parlare</h1>
+                    <p>Che tu faccia parte di un club scolastico, gruppo di gamer, comunità artistica mondiale, o semplicemente di un piccolo gruppo di amici che vuole passare il tempo assieme, Discord rende più facile chiacchierare ogni giorno e ritrovarsi più spesso</p>
+                </div>
+                <div class="nav-button">
+                    <button class="bg-white">&dArr; Scarica per Mac</button>
+                    <button class="bg-black">Apri Discord nel tuo browser</button>
+                </div>
+            </div>
+        </section>
+
         <section class="card">
             <div class="container">
                 <div class="row">
@@ -111,7 +116,7 @@
             <div class="container-sm">
                 <div class="row">
                     <div class="starred">
-                        <h2>Pronto a iniziare la tua nuova avventura?</h2>
+                        <h3>Pronto a iniziare la tua nuova avventura?</h3>
                     </div>
                 </div>
                 <div class="nav-button">
@@ -133,7 +138,7 @@
                             </div>
                             <div>
                                 <div class="language">
-                                    <img class="icon-footer" src="./img/ita.png" alt="">
+                                    <img class="footer-icon" src="./img/ita.png" alt=""> 
                                     <form action="/action_page.php" class="nation-button">
                                         
                                         <select name="nation" id="nation">
@@ -146,16 +151,16 @@
                                     </form>
                                 </div>
                             </div>
-                            <div>
-                                <img src="./img/twitter.png" alt="" class="icon-footer">
-                                <img src="./img/instagram.png" alt="" class="icon-footer">
-                                <img src="./img/facebook.png" alt="" class="icon-footer">
-                                <img src="./img/youtube.png" alt="" class="icon-footer">
+                            <div class="footer-social">
+                                <img src="./img/twitter.png" alt="" class="footer-icon">
+                                <img src="./img/instagram.png" alt="" class="footer-icon">
+                                <img src="./img/facebook.png" alt="" class="footer-icon">
+                                <img src="./img/youtube.png" alt="" class="footer-icon">
                             </div>
 
                         </div>    
                     </div>
-                    <div class="col-2 menu-footer">
+                    <div class="col-2 footer-menu">
                         <ul>
                             <li><h3 class="text-blue">Prodotto</h3></li>
                             <li>Scarica</li>

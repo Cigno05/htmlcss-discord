@@ -8,7 +8,7 @@
 
 body *{
     font-family: 'Oswald', sans-serif;
-    font-family: 'Single Day', cursive;
+    font-family: 'Roboto', sans-serif;
 }
 
 ol,
@@ -39,6 +39,26 @@ img{
 
 /* LAYOUT */
 
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.container-sm {
+    max-width: 700px;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    gap: 100px;
+}
+
+.row {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+   
+}
+
 .wave{
     margin: -6px;
     min-height: 150px;
@@ -50,42 +70,6 @@ img{
     transform: rotate(180deg);
 }    
     
-
-    
-
-
-.container{
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.container-sm {
-    max-width: 700px;
-    margin: 0 auto;
-    padding-top: 50px;
-    padding-bottom: 80px;
-    
-}
-
-.nav-bottom{
-    padding: 50px, 0;
-}
-
-.row {
-    display: flex;
-    padding: 10px;
-    justify-content: center;
-   
-}
-
-
-[class^='col']{
-    display: flex;
-    gap: 20px;
-}
-
-
-
 .container-link {
     display: flex;
     align-items: center;
@@ -104,6 +88,7 @@ img{
     
    
 }
+
 .container-sm .row{
     flex-direction: column;
     align-items: center;
@@ -111,24 +96,17 @@ img{
     
 }
 
-
-.nav-button {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-.container-sm {
-    gap: 100px;
-}
-
 .card{
 padding-top: 80px;
 padding-bottom: 50px;
 }
 
-.card.bg-gray{
-    padding-top: 0;
+
+[class^='col']{
+    display: flex;
+    gap: 20px;
 }
+
 .card [class^='col']{
     min-height: 10px;
 
@@ -138,6 +116,9 @@ padding-bottom: 50px;
     flex-direction: row-reverse;
 }
 
+.card.bg-gray{
+    padding-top: 0;
+}
 
 /* Column size */
 
@@ -189,10 +170,20 @@ padding-bottom: 50px;
 
 /* utilities */
 
-h1 {
-    font-size: 40px;
+.nav-button {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
+.logo-discord img{
+    display: block;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
 
 .bg-white {
     background-color: white;
@@ -214,8 +205,14 @@ h1 {
 }
 
 .nav-header {
+    background-color: #255EE9;
+}
+
+.main-hero {
     background-image: url(../img/jumbo.png);
     background-size: cover;
+    color: white;
+    
 }
 
 .text-white {
@@ -247,8 +244,10 @@ h1 {
 .starred{
     min-height: 50px;
     background-image: url(../img/stars.svg);
-    padding: 20px;
+    padding: 50px;
     font-size: 25px;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .foot-top [class^='col']{
@@ -256,12 +255,17 @@ h1 {
 }
 
 
-.icon-footer {
+.footer-icon {
     width:20px;
     display: inline-block;
 }
 
-.menu-footer{
+.footer-social {
+    display: flex;
+    gap: 8px;
+}
+
+.footer-menu{
     display: flex;
 }
 
@@ -306,6 +310,7 @@ h1 {
 
 .debug .card {
     border: 2px solid purple;
+
 }
 
 .debug .container, .debug .container-sm{
